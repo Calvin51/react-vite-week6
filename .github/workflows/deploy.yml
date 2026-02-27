@@ -38,8 +38,8 @@ jobs:
         # 這裡會讀取你設定的 Repository Secrets
         run: npm run build
         env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
-          VITE_OTHER_VAR: ${{ secrets.VITE_OTHER_VAR }}
+          VITE_API_BASE: ${{ secrets.VITE_API_BASE }}
+          VITE_API_PATH: ${{ secrets.VITE_API_PATH }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
